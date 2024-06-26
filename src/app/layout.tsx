@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={`${inter.className} antialiased`}>
         <header>
           <ul className="flex justify-center text-[24px] gap-5 py-5 font-semibold">
             <li>
