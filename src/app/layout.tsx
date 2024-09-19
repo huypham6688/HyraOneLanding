@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import AppProvider from "./provider";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,30 +20,25 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  const messages = await getMessages();
+  unstable_setRequestLocale(locale);
+
   return (
     <html lang={locale}>
       <body className={`${inter.className} antialiased`}>
-        <header>
-          <ul className="flex justify-center text-[24px] gap-5 py-5 font-semibold">
-            <li>
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li>
-              <Link href={"/vi/example"}>Example</Link>
-            </li>
-            <li>
-              <Link href={"/vi/notfound"}>Not found</Link>
-            </li>
-          </ul>
-        </header>
-        <main>{children}</main>
+        <AppProvider>
+          <NextIntlClientProvider messages={messages}>
+            <header></header>
+            <main>{children}</main>
+          </NextIntlClientProvider>
+        </AppProvider>
       </body>
     </html>
   );
