@@ -2,19 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
