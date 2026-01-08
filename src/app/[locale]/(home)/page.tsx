@@ -8,20 +8,24 @@ import { PaymentGateway } from "@/components/landing/features/PaymentGateway"
 import { MiniApps } from "@/components/landing/features/MiniApps"
 import { SecuritySection } from "@/components/landing/SecuritySection"
 import { Roadmap } from "@/components/landing/Roadmap"
+import { FullImageCTA } from "@/components/landing/FullImageCTA"
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-white font-sans text-slate-900">
-      <Navbar />
-      <Hero />
-      <Partners />
-      <SecureOnboarding />
-      <NetworksAssets />
-      <PaymentGateway />
-      <MiniApps />
-      <SecuritySection />
-      <Roadmap />
-      <Footer />
-    </main>
-  )
+    return (
+        <main className="min-h-screen bg-white font-sans text-slate-900">
+            <Navbar />
+            <Hero />
+            <Partners />
+            <SecureOnboarding />
+            <NetworksAssets />
+            <PaymentGateway />
+            <MiniApps />
+            <SecuritySection />
+            <Roadmap />
+
+            <FullImageCTA />
+
+            <Footer />
+        </main>
+    )
 }
