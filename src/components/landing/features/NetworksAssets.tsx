@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function NetworksAssets() {
     return (
-        <section className="min-h-screen bg-[#EEF2FF] flex items-center">
+        <section className="min-h-screen bg-[#F3F0FF] flex items-center">
             <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 xl:px-20">
                 <div className="grid md:grid-cols-2 gap-24 items-center">
 
