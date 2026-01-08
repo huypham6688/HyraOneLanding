@@ -1,5 +1,9 @@
 {
   "home": "Trang chủ",
   "about": "Giới thiệu",
-  "contact": "Liên hệ"
+  "contact": "Liên hệ",
+  "NotFound": {
+    "description": "Xin lỗi, trang bạn tìm kiếm không tồn tại.",
+    "backHome": "Về trang chủ"
+  }
 }

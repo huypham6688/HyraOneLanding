@@ -9,7 +9,7 @@ import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
-export const runtime = "edge";
+
 
 export const metadata: Metadata = {
     title: {
