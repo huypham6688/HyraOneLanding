@@ -7,10 +7,12 @@ import { Partners } from "@/app/[locale]/(home)/components/Partners";
 import { Roadmap } from "@/app/[locale]/(home)/components/Roadmap";
 import { SecuritySection } from "@/app/[locale]/(home)/components/SecuritySection";
 import React from "react";
+import { Hero } from "./components/Hero";
 
 const HomePage = () => {
    return (
       <>
+         <Hero />
          <Partners />
          <SecureOnboarding />
          <NetworksAssets />

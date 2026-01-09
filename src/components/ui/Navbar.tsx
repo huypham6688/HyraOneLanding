@@ -35,24 +35,24 @@ export function Navbar() {
                         <Link href="/" className="text-[#FF6F2C]/80">
                             Home
                         </Link>
-                        <Link href="/about" className="text-slate-700 hover:text-[#FF6F2C]/80">
+                        <Link href="/about-us" className="text-slate-700 hover:text-[#FF6F2C]/80">
                             About
                         </Link>
-                        <Link href="/#services" className="text-slate-700 hover:text-[#FF6F2C]/80">
-                            Services
+                        <Link href="/#feature" className="text-slate-700 hover:text-[#FF6F2C]/80">
+                            Feature
                         </Link>
                         <Link href="/policy" className="text-slate-700 hover:text-[#FF6F2C]/80">
                             Policy
                         </Link>
-                        <Link href="/#download-app" className="text-slate-700 hover:text-[#FF6F2C]/80">
-                            Download app
+                        <Link href="/contact" className="text-slate-700 hover:text-[#FF6F2C]/80">
+                            Contact
                         </Link>
                     </div>
 
                     {/* CTA */}
                     <div className="flex items-center gap-2">
                         <Button className="rounded-full bg-[#FF6F2C] text-white px-4 py-1.5 text-xs font-semibold hover:bg-[#FF6F2C]/80">
-                            Get Card
+                            Download app
                         </Button>
 
                         <Button variant="ghost" size="icon" className="md:hidden hover:bg-[#FF6F2C]/80">
