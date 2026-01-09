@@ -7,7 +7,6 @@ import { routing } from "@/i18n/routing";
 
 import "@/app/globals.css";
 import { Navbar } from "@/components/ui/Navbar";
-import { Hero } from "@/app/[locale]/(home)/components/Hero";
 import { Footer } from "@/components/ui/Footer";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
@@ -17,7 +16,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
     title: {
         default: "HyraOne - An All-in-One bank",
-        template: "%s | Tên Website",
+        template: "%s | HyraOne",
     },
     description: "An All-in-One bank with unifying accounts, payments, savings, lending, DAO, rewards and compliance.",
     keywords: ["hyraone", "Hyra", "Hyra One"],
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
         url: "http://localhost:3000/vi",
         title: "HyraOne - An All-in-One bank",
         description: "An All-in-One bank with unifying accounts, payments, savings, lending, DAO, rewards and compliance.",
-        siteName: "Tên Website",
+        siteName: "HyraOne",
         images: [
             {
                 url: "/og-image.jpg",
@@ -55,8 +54,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Tiêu đề cho Twitter",
-        description: "Mô tả cho Twitter",
+        title: "HyraOne - An All-in-One bank",
+        description: "An All-in-One bank with unifying accounts, payments, savings, lending, DAO, rewards and compliance.",
         creator: "@twitter_handle",
         images: ["/twitter-image.jpg"],
     },
@@ -100,7 +99,6 @@ export default async function LocaleLayout({
                 <NextIntlClientProvider messages={messages}>
                     <AppProvider>
                         <Navbar />
-                        <Hero />
                         <main>{children}</main>
                         <Footer />
                     </AppProvider>

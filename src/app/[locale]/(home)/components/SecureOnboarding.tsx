@@ -1,10 +1,11 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function SecureOnboarding() {
     return (
-        <section className="min-h-screen bg-[#F5F3FF] flex items-center">
+        <section id="feature" className="min-h-screen bg-[#F5F3FF] flex items-center">
             <div className="w-full max-w-[1600px] mx-auto px-8 md:px-16">
                 <div className="grid md:grid-cols-2 gap-24 items-center">
 
@@ -29,8 +30,11 @@ export function SecureOnboarding() {
 
                     {/* RIGHT */}
                     <div className="order-1 md:order-2 flex justify-center md:justify-end">
-                        <img
+                        <Image
                             src="/earn-feature.png"
+                            width={0}
+                            height={0}
+                            sizes="100vw"
                             alt="Earn Feature"
                             className="w-full max-w-xl h-[620px] md:h-[680px] object-contain rounded-3xl drop-shadow-2xl"
                         />
