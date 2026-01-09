@@ -6,6 +6,9 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
 import "@/app/globals.css";
+import { Navbar } from "@/components/ui/Navbar";
+import { Hero } from "@/app/[locale]/(home)/components/Hero";
+import { Footer } from "@/components/ui/Footer";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -13,20 +16,20 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
     title: {
-        default: "Tên Website - Mô tả ngắn gọn",
+        default: "HyraOne - An All-in-One bank",
         template: "%s | Tên Website",
     },
-    description: "Mô tả chi tiết về website, tối ưu cho SEO với từ khóa chính",
-    keywords: ["từ khóa 1", "từ khóa 2", "từ khóa 3"],
+    description: "An All-in-One bank with unifying accounts, payments, savings, lending, DAO, rewards and compliance.",
+    keywords: ["hyraone", "Hyra", "Hyra One"],
     authors: [{ name: "Tên tác giả", url: "https://example.com" }],
-    creator: "Tên người tạo",
-    publisher: "Tên nhà xuất bản",
+    creator: "admin",
+    publisher: "HyraTek",
     formatDetection: {
         email: false,
         address: false,
         telephone: false,
     },
-    metadataBase: new URL("https://yourwebsite.com"),
+    metadataBase: new URL("http://localhost:3000/vi"),
     alternates: {
         canonical: "/",
         languages: {
@@ -37,9 +40,9 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "vi_VN",
-        url: "https://yourwebsite.com",
-        title: "Tiêu đề cho Open Graph",
-        description: "Mô tả cho Open Graph",
+        url: "http://localhost:3000/vi",
+        title: "HyraOne - An All-in-One bank",
+        description: "An All-in-One bank with unifying accounts, payments, savings, lending, DAO, rewards and compliance.",
         siteName: "Tên Website",
         images: [
             {
@@ -96,7 +99,10 @@ export default async function LocaleLayout({
             <body className={`${inter.className} antialiased`}>
                 <NextIntlClientProvider messages={messages}>
                     <AppProvider>
+                        <Navbar />
+                        <Hero />
                         <main>{children}</main>
+                        <Footer />
                     </AppProvider>
                 </NextIntlClientProvider>
             </body>

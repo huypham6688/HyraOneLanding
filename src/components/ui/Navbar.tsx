@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
+import Image from "next/image"
 
 export function Navbar() {
     return (
@@ -21,9 +22,9 @@ export function Navbar() {
                 >
                     {/* LOGO */}
                     <Link href="/" className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-white font-bold text-sm">
-                            H
-                        </div>
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                            <Image src={'/images/logo_one.png'} width={40} height={40} alt="logo one" />
+                        </div> 
                         <span className="font-semibold text-slate-900 text-sm">
                             Hyra One
                         </span>
@@ -31,24 +32,30 @@ export function Navbar() {
 
                     {/* MENU */}
                     <div className="hidden md:flex items-center gap-6 text-sm font-medium">
-                        <Link href="/" className="text-purple-600">
+                        <Link href="/" className="text-[#FF6F2C]/80">
                             Home
                         </Link>
-                        <Link href="/about" className="text-slate-700 hover:text-purple-600">
+                        <Link href="/about" className="text-slate-700 hover:text-[#FF6F2C]/80">
                             About
                         </Link>
-                        <Link href="/policy" className="text-slate-700 hover:text-purple-600">
+                        <Link href="/#services" className="text-slate-700 hover:text-[#FF6F2C]/80">
+                            Services
+                        </Link>
+                        <Link href="/policy" className="text-slate-700 hover:text-[#FF6F2C]/80">
                             Policy
+                        </Link>
+                        <Link href="/#download-app" className="text-slate-700 hover:text-[#FF6F2C]/80">
+                            Download app
                         </Link>
                     </div>
 
                     {/* CTA */}
                     <div className="flex items-center gap-2">
-                        <Button className="rounded-full bg-black text-white px-4 py-1.5 text-xs font-semibold hover:bg-black/80">
+                        <Button className="rounded-full bg-[#FF6F2C] text-white px-4 py-1.5 text-xs font-semibold hover:bg-[#FF6F2C]/80">
                             Get Card
                         </Button>
 
-                        <Button variant="ghost" size="icon" className="md:hidden">
+                        <Button variant="ghost" size="icon" className="md:hidden hover:bg-[#FF6F2C]/80">
                             <Menu className="h-4 w-4" />
                         </Button>
                     </div>
