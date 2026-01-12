@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ArrowRight, Shield, Zap, Globe, Layers, TrendingUp, Cpu, Smartphone, CreditCard, Mail } from "lucide-react";
+import { ArrowRight, Shield, Zap, Globe, Layers, TrendingUp, Cpu, Smartphone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const AboutUsPage = () => {
@@ -24,8 +24,8 @@ const AboutUsPage = () => {
                   </div>
                   <div className="flex-1 relative">
                      <div className="absolute -z-10 w-[400px] h-[400px] bg-[#FF6F2C]/10 blur-[100px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-                     <div className="relative mx-auto w-[280px] lg:w-[320px]">
-                        <Image src={"/images/about-us/hero_image.png"} width={395} height={632} alt="Hero Image" />
+                     <div className="relative mx-auto w-[320px] lg:w-[395px]">
+                        <Image src={"/images/about-us/hero_image.png"} width={450} height={632} alt="Hero Image" />
                      </div>
                   </div>
                </div>
