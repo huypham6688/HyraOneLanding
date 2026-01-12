@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const AboutUsPage = () => {
    return (
       <div className="bg-white text-slate-900 max-w-[1440px] mx-auto lg:min-h-screen font-sans selection:bg-[#FF6F2C]/20">
-         <section className="relative pt-20 pb-20 overflow-hidden lg:h-screen">
+         <section className="relative pt-20 pb-20 overflow-hidden lg:h-screen flex items-center">
             <div className="container mx-auto px-6 relative z-10">
                <div className="flex flex-col lg:flex-row items-center gap-12">
                   <div className="flex-1 text-center lg:text-left">
@@ -16,7 +16,7 @@ const AboutUsPage = () => {
                      </h1>
                      <p className="text-slate-600 text-lg lg:text-xl mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">HyraOne is the next-gen All-in-one wallet helping you store, trade, and optimize digital asset returns without any intermediary banks.</p>
                      <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <Button className="bg-[#FF6F2C] hover:bg-[#FF6F2C]/90 text-white px-8 py-6 rounded-full text-lg font-bold w-full sm:w-auto shadow-lg shadow-orange-500/20 transition-all">Download Wallet</Button>
+                        <Button className="bg-[#FF6F2C] hover:bg-[#FF6F2C]/90 text-white px-8 py-6 rounded-full text-lg font-bold w-full sm:w-auto shadow-lg shadow-orange-500/20 transition-all">Download app</Button>
                         <Button variant="outline" className="border-slate-200 text-slate-700 hover:bg-slate-50 px-8 py-6 rounded-full text-lg font-bold w-full sm:w-auto transition-all">
                            Explore Ecosystem
                         </Button>
