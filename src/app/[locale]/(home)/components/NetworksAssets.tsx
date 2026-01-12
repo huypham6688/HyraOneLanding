@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function NetworksAssets() {
     return (
@@ -29,7 +30,10 @@ export function NetworksAssets() {
 
                     {/* LEFT IMAGE */}
                     <div className="order-1 md:order-1 flex justify-center md:justify-start">
-                        <img
+                        <Image
+                            width={0}
+                            height={0}
+                            sizes="100vw"
                             src="/savings-feature.png"
                             alt="Invest Feature"
                             className="w-full max-w-xl h-[620px] md:h-[680px] object-contain rounded-3xl drop-shadow-2xl"
