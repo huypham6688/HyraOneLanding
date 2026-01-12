@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function PaymentGateway() {
     return (
@@ -8,7 +9,6 @@ export function PaymentGateway() {
             <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 xl:px-20">
                 <div className="grid md:grid-cols-2 gap-24 items-center">
 
-                    {/* LEFT TEXT */}
                     <div className="order-2 md:order-1">
                         <h2 className="text-5xl md:text-7xl xl:text-8xl font-black text-slate-900 mb-8 leading-[1.05] tracking-tight">
                             Payment Gateway &
@@ -26,9 +26,11 @@ export function PaymentGateway() {
                         </Button>
                     </div>
 
-                    {/* RIGHT IMAGE */}
                     <div className="order-1 md:order-2 flex justify-center md:justify-end">
-                        <img
+                        <Image
+                            width={0}
+                            height={0}
+                            sizes="100vw"
                             src="/pay-feature.png"
                             alt="Pay Feature"
                             className="w-full max-w-xl h-[620px] md:h-[680px] object-contain rounded-3xl drop-shadow-2xl"
