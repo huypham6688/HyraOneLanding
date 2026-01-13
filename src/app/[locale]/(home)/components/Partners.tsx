@@ -1,28 +1,29 @@
-"use client"
+"use client";
 
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 export function Partners() {
-    return (
-        <section className="py-20 bg-white">
-            <div className="max-w-4xl mx-auto px-6 text-center">
-                <div className="flex flex-wrap items-center justify-center gap-8 mb-6 opacity-90 scale-110">
-                    <div className="flex items-center gap-2 font-bold text-xl text-yellow-600">
-                        <div className="w-6 h-6 bg-yellow-500 rounded-full"></div> BSC
-                    </div>
-                    <div className="h-6 w-px bg-gray-300"></div>
-                    <div className="flex items-center gap-2 font-bold text-xl text-blue-600">
-                        <div className="w-6 h-6 bg-blue-500 rounded-full"></div> Ethereum
-                    </div>
-                    <div className="h-6 w-px bg-gray-300"></div>
-                    <div className="flex items-center gap-2 font-bold text-xl text-red-600">
-                        <div className="w-6 h-6 bg-red-500 rounded-full"></div> TRON
-                    </div>
-                </div>
-                <p className="text-slate-500 font-medium text-lg max-w-xl mx-auto">
-                    Supporting core <span className="text-purple-600 font-bold">EVM & Non-EVM</span> chains for fast, low-cost transactions.
-                </p>
+   return (
+      <section className="p-[88px] max-w-[1440px] mx-auto bg-[#1E1E1E] rounded-[40px]">
+         <div className="max-w-4xl mx-auto px-6 text-center">
+            <h2 className="text-[#FFFFFF] font-bold text-[48px]/[56px]">Supported Networks</h2>
+            <p className="font-normal text-xl/[26px] text-[#FFFFFFB8] mt-4">Supporting core EVM & Non-EVM chains for fast, low-cost transactions.</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-20 lg:gap-[100px] mb-6 mt-[45px]">
+               <div className="flex flex-col items-center">
+                  <Image src={"/images/home/logo_bcs.svg"} width={225} height={225} alt="BCS" />
+                  <p className="text-white text-xl font-medium -mt-6">BSC</p>
+               </div>
+               <div className="flex flex-col items-center">
+                  <Image src={"/images/home/logo_eth.svg"} width={225} height={225} alt="BCS" />
+                  <p className="text-white text-xl font-medium -mt-6">Etherum</p>
+               </div>
+               <div className="flex flex-col items-center">
+                  <Image src={"/images/home/logo_tron.svg"} width={225} height={225} alt="BCS" />
+                  <p className="text-white text-xl font-medium -mt-6">Tron</p>
+               </div>
             </div>
-        </section>
-    )
+         </div>
+      </section>
+   );
 }
