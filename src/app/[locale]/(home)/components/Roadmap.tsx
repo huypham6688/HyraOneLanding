@@ -21,6 +21,7 @@ export function Roadmap() {
                         <div
                             className="w-full md:w-[341.33px] h-auto md:h-[272px] bg-gray-100 rounded-xl p-6 flex flex-col justify-between relative overflow-hidden"
                             style={{
+                                backgroundColor: '#F8F8F9',
                                 clipPath: typeof window !== 'undefined' && window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)'
                             }}
                         >
@@ -44,8 +45,9 @@ export function Roadmap() {
 
                         {/* Sprint 2 */}
                         <div
-                            className="w-full md:w-[341.33px] h-auto md:h-[272px] bg-gray-100 rounded-xl p-6 flex flex-col justify-between relative overflow-hidden"
+                            className="w-full md:w-[341.33px] h-auto md:h-[272px]  rounded-xl p-6 flex flex-col justify-between relative overflow-hidden"
                             style={{
+                                backgroundColor: '#F8F8F9',
                                 clipPath: typeof window !== 'undefined' && window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)'
                             }}
                         >
