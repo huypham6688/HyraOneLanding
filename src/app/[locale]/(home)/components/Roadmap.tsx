@@ -21,7 +21,7 @@ export function Roadmap() {
                         <div
                             className="w-full md:w-[341.33px] h-auto md:h-[272px] bg-gray-100 rounded-xl p-6 flex flex-col justify-between relative overflow-hidden"
                             style={{
-                                clipPath: window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)'
+                                clipPath: typeof window !== 'undefined' && window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)'
                             }}
                         >
                             <div className="w-full mb-4 md:mb-0">
@@ -33,7 +33,7 @@ export function Roadmap() {
                             <div className="w-full">
                                 <div className="text-base md:text-[18px] leading-[24px] tracking-[0.01em] font-medium text-gray-700">
                                     <div className="font-bold mb-2">Onboarding & Basics</div>
-                                    <ul className="space-y-1 text-sm">
+                                    <ul className="space-y-1 text-base md:text-[18px] leading-[24px] tracking-[0.01em] pl-1.5">
                                         <li>• Login/Signup & Wallet Creation</li>
                                         <li>• Key Encryption & Biometrics</li>
                                         <li>• Preset Networks (ETH, BSC, TRON)</li>
@@ -46,7 +46,7 @@ export function Roadmap() {
                         <div
                             className="w-full md:w-[341.33px] h-auto md:h-[272px] bg-gray-100 rounded-xl p-6 flex flex-col justify-between relative overflow-hidden"
                             style={{
-                                clipPath: window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)'
+                                clipPath: typeof window !== 'undefined' && window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)'
                             }}
                         >
                             <div className="w-full mb-4 md:mb-0">
@@ -58,7 +58,7 @@ export function Roadmap() {
                             <div className="w-full">
                                 <div className="text-base md:text-[18px] leading-[24px] tracking-[0.01em] font-medium text-gray-700">
                                     <div className="font-bold mb-2">Transactions & Fiat</div>
-                                    <ul className="space-y-1 text-sm">
+                                    <ul className="space-y-1 text-base md:text-[18px] leading-[24px] tracking-[0.01em] pl-1.5">
                                         <li>• EIP-712 Signing</li>
                                         <li>• Fee Estimation & Tx History</li>
                                         <li>• Fiat Pricing (USD/VND)</li>
@@ -71,7 +71,7 @@ export function Roadmap() {
                         <div
                             className="w-full md:w-[341.33px] h-auto md:h-[272px] rounded-xl p-6 flex flex-col justify-between relative overflow-hidden"
                             style={{
-                                clipPath: window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)',
+                                clipPath: typeof window !== 'undefined' && window.innerWidth >= 768 ? 'polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px)' : 'polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px)',
                                 backgroundImage: 'url(/sprint/sprint3-bg.png)',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center'
@@ -99,7 +99,7 @@ export function Roadmap() {
                             <div className="w-full relative z-10">
                                 <div className="text-base md:text-[18px] leading-[24px] tracking-[0.01em] font-medium text-white">
                                     <div className="font-bold mb-2">Onboarding & Basics</div>
-                                    <ul className="space-y-1 text-sm">
+                                    <ul className="space-y-1 text-base md:text-[18px] leading-[24px] tracking-[0.01em] pl-1.5">
                                         <li>• Push Notifications</li>
                                         <li>• UI & Address Book</li>
                                         <li>• UAT & Launch by Week 6</li>
