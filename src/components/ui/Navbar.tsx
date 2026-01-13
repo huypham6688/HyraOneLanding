@@ -32,12 +32,9 @@ export function Navbar() {
                     "
                 >
                     <Link href="/" className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                            <Image src={'/images/logo_one.png'} width={40} height={40} alt="logo one" />
+                        <div className="w-[114px] h-[44px] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                            <Image src={'/images/home/Logo.svg'} width={114} height={44} alt="logo one" />
                         </div>
-                        <span className="font-semibold text-slate-900 text-sm">
-                            Hyra One
-                        </span>
                     </Link>
 
                     <div className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -54,7 +51,7 @@ export function Navbar() {
 
                     <div className="flex items-center gap-2">
                         <Button className="hidden md:flex rounded-full bg-[#FF6F2C] text-white px-4 py-1.5 text-xs font-semibold hover:bg-[#FF6F2C]/80 transition-all">
-                            Download app
+                            Get started
                         </Button>
 
                         <Button 
@@ -86,7 +83,7 @@ export function Navbar() {
                         <hr className="border-slate-100" />
 
                         <Button className="w-full rounded-full bg-[#FF6F2C] text-white py-6 text-sm font-semibold hover:bg-[#FF6F2C]/90 shadow-md">
-                            Download app
+                            Get started
                         </Button>
                     </div>
                 )}
